@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">WeatherWise</string>
+    <string name="loading">Loading…</string>
+    <string name="about_1">On the Weather tab you can check the current weather of  each county capital city. You can refresh the values by clicking on the refresh button.</string>
+    <string name="about_2">If you press the + icon, the temperature value of the given city will be saved.</string>
+    <string name="about_3">If you select a city from the list at the weather tab, the details view opens. You can check current weather related values, such as humidity, wind speed, etc.</string>
+    <string name="about_4">At the History tab you can see the saved temperature values.</string>
+    <string name="about">About</string>
+    <string name="saving">Saving…</string>
+    <string name="save_city_weather">Save city weather</string>
+    <string name="save_confirm">Are you sure you want to save weather details?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="cloud">Cloud</string>
+    <string name="coverage">coverage</string>
+    <string name="speed">speed</string>
+    <string name="percentage">percentage</string>
+    <string name="celsius">celsius</string>
+    <string name="details">details</string>
+    <string name="history">History</string>
+    <string name="weather">Weather</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="delete_all">Delete all saves</string>
+    <string name="delete_all_confirm">Are you sure you want to delete all saved weather details?</string>
+    <string name="delete_city_weather">Delete city weather</string>
+    <string name="delete_confirm">Are you sure you want to delete weather details?</string>
+    <string name="saved">SAVED AT</string>
+    <string name="unsaved">UNSAVED</string>
+</resources>

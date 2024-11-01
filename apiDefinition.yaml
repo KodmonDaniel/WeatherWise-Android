@@ -1,0 +1,139 @@
+openapi: 3.0.3
+info:
+  title: WeatherWise - OpenWeatherMap
+  description: |-
+    WeatherWise által használt OpenWeatherMap API hívás leírása.
+
+  version: 0.1.0
+servers:
+  - url: https://api.openweathermap.org/data/2.5
+    description: API base URL  
+
+
+paths:
+  /group:
+    get:
+      summary: Checks user credentials
+      operationId: updatePet
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse' 
+        '401':
+          description: Invalid API key
+      parameters:
+        - name: appid
+          in: query
+          description: API key
+          required: true
+          schema:
+            type: string
+            example: ' **INSERT API KEY HERE** ' 
+        - name: id
+          in: query
+          description: City ids
+          required: true
+          schema:
+            type: string
+            example: '722437,3054643,721472,721239,3052009,3050616,3050434,717582,716935,3046526,3045643,715429,3044760,3044774,715126,3044310,3044082,3042929,3042638' 
+       
+            
+components:
+  schemas:
+    ApiResponse: 
+      type: object
+      properties: 
+        cnt: 
+          type: integer
+          format: int32
+        list: 
+          type: array
+          items: 
+            type: object
+            properties: 
+              coord: 
+                type: object
+                properties: 
+                  lon: 
+                    type: number
+                  lat: 
+                    type: number
+              sys: 
+                type: object
+                properties: 
+                  country: 
+                    type: string
+                  timezone: 
+                    type: integer
+                    format: int32
+                  sunrise: 
+                    type: integer
+                    format: int32
+                  sunset: 
+                    type: integer
+                    format: int32
+              weather: 
+                type: array
+                items: 
+                  type: object
+                  properties: 
+                    id: 
+                      type: integer
+                      format: int32
+                    main: 
+                      type: string
+                    description: 
+                      type: string
+                    icon: 
+                      type: string
+              main: 
+                type: object
+                properties: 
+                  temp: 
+                    type: number
+                  feels_like: 
+                    type: number
+                  temp_min: 
+                    type: number
+                  temp_max: 
+                    type: number
+                  pressure: 
+                    type: integer
+                    format: int32
+                  sea_level: 
+                    type: integer
+                    format: int32
+                  grnd_level: 
+                    type: integer
+                    format: int32
+                  humidity: 
+                    type: integer
+                    format: int32
+              visibility: 
+                type: integer
+                format: int32
+              wind: 
+                type: object
+                properties: 
+                  speed: 
+                    type: number
+                  deg: 
+                    type: integer
+                    format: int32
+              clouds: 
+                type: object
+                properties: 
+                  all: 
+                    type: integer
+                    format: int32
+              dt: 
+                type: integer
+                format: int32
+              id: 
+                type: integer
+                format: int32
+              name: 
+                type: string
