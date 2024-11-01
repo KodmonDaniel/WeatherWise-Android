@@ -1,7 +1,7 @@
 
 # WeatherWise
 
-Android App (structure practise) 2024
+Android App (structure practise) 2024 </br>
 <img src="./assets/launcher_icon.png" width="160">
 
 
@@ -29,12 +29,12 @@ The icon in the AppBar of the application displays a static `About` page describ
 
 ## Screen design
 
-Screen layouts (from left to right) County list, Saved weathers, Detailed view, Information view.
+The screen layouts are County list, Saved weathers, Detailed view, Information view.
 
 <img src="./assets/list.png" width="200">
-<img src="./assets/history@1x.png" width="200">
-<img src="./assets/details@1x.png" width="200">
-<img src="./assets/about@1x.png" width="200">
+<img src="./assets/history.png" width="200">
+<img src="./assets/details.png" width="200">
+<img src="./assets/about.png" width="200">
 
 ## Architecture and environment
 
